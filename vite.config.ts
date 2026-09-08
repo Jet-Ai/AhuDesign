@@ -13,6 +13,10 @@ const { d1, r2 } = hostingConfig;
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === 'seatbelt';
 
 const localBindingConfig = {
+  name: 'ahudesign',
+  compatibility_date: '2026-05-15',
+  build: { command: '' },
+  assets: { directory: './public' },
   main: 'vinext/server/fetch-handler',
   compatibility_flags: ['nodejs_compat'],
   d1_databases: d1

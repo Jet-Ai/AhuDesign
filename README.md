@@ -12,3 +12,9 @@ Run `pnpm build` for the Cloudflare deployment build.
 Project photographs are web-optimised copies of assets supplied in the parent AhuDesign folder. Portfolio titles are editorial descriptions, not verified formal project names. Contact: hasan.alibeyli@outlook.com / +421 944 693 002.
 
 Hosting identity is retained in `.openai/hosting.json`. The ahudesign.eu custom domain has not been connected.
+
+## Cloudflare Workers deployment
+
+Use repository root `/`, build command `pnpm run build`, and deploy command `pnpm exec wrangler deploy --config dist/server/wrangler.json`. Alternatively, `pnpm run deploy` builds and deploys in one command. Do not use the automatically generated workspace filter. The generated Worker serves the SK, AZ and EN routes; static assets come from `dist/client`.
+
+The root Wrangler configuration also supports `pnpm exec wrangler deploy` from a fresh checkout by running the build first.
