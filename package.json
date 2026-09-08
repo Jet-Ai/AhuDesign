@@ -2,12 +2,14 @@
   "name": "sites-project",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "engines": {
     "node": ">=22.13.0"
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "vinext build",
+    "clean": "rm -rf .vinext dist .vite node_modules/.cache",
+    "build": "pnpm run clean && vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt",
@@ -52,12 +54,5 @@
     "typescript": "5.9.3",
     "vite": "8.0.13",
     "wrangler": "4.92.0"
-  },
-  "type": "module"
-}
-"scripts": {
-  "dev": "vinext dev",
-  "clean": "rm -rf .vinext dist .vite node_modules/.cache",
-  "build": "pnpm run clean && vinext build",
-  "deploy": "pnpm run build && wrangler deploy"
+  }
 }
