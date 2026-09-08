@@ -11,9 +11,19 @@
     "directory": "dist/client"
   },
   "build": {
-    "command": "pnpm run build"
+    "command": "node node_modules/vinext/dist/cli.js build"
   },
   "observability": {
     "enabled": true
-  }
+  },
+  "find_additional_modules": true,
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": [
+        "**/*.js",
+        "**/*.mjs"
+      ]
+    }
+  ]
 }

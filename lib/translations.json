@@ -298,5 +298,15 @@
     "sk": "15 rokov skúseností s dizajnom a rekonštrukciami v Azerbajdžane a Turecku, teraz v Európe. Výber, dodávka a montáž profesionálneho vybavenia pre predajne, reštaurácie a kancelárie.",
     "az": "Azərbaycan və Türkiyədə 15 illik dizayn və təmir təcrübəsi, indi Avropada. Peşəkar market, restoran və ofis avadanlıqlarının seçimi, təchizatı və quraşdırılması.",
     "en": "15 years of design and renovation experience in Azerbaijan and Türkiye, now in Europe. Professional market, restaurant and office equipment sourcing, supply and installation."
+  },
+  "Services": {
+    "sk": "Služby",
+    "az": "Xidmətlər",
+    "en": "Services"
+  },
+  "Years of experience": {
+    "sk": "rokov skúseností",
+    "az": "illik təcrübə",
+    "en": "years of experience"
   }
 }
