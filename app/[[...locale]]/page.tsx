@@ -1,10 +1,11 @@
 import Portfolio from '@/components/portfolio';
-import { getLocale, translate } from '@/lib/i18n';
+import { getLocale } from '@/lib/i18n';
+import { siteMetadata } from '@/lib/site-metadata';
 import { notFound } from 'next/navigation';
 export async function generateMetadata({params}: {params:Promise<{locale?:string[]}>}) {
  const {locale:segments}=await params;
  const locale=getLocale(segments);
- return {title:translate(locale,'AHU Design — Interiors & Spaces'),description:translate(locale,'15 years of design and renovation experience in Azerbaijan and Türkiye, now in Europe. Professional market, restaurant and office equipment sourcing, supply and installation.'),alternates:{canonical:'https://ahu-design.jet-a1.chatgpt.site/'+locale,languages:{sk:'https://ahu-design.jet-a1.chatgpt.site/sk',az:'https://ahu-design.jet-a1.chatgpt.site/az',en:'https://ahu-design.jet-a1.chatgpt.site/en'}}};
+ return siteMetadata('https://ahudesign.eu', locale);
 }
 export default async function Page({params}: {params:Promise<{locale?:string[]}>}) {
  const {locale:segments}=await params;

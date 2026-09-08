@@ -11,7 +11,7 @@ Run `pnpm build` for the Cloudflare deployment build.
 
 Project photographs are web-optimised copies of assets supplied in the parent AhuDesign folder. Portfolio titles are editorial descriptions, not verified formal project names. Contact: hasan.alibeyli@outlook.com / +421 944 693 002.
 
-Hosting identity is retained in `.openai/hosting.json`. The ahudesign.eu custom domain has not been connected.
+Public website: https://ahudesign.eu. Canonical, language and social sharing metadata use this domain. Internal navigation stays on the domain the visitor opened.
 
 ## Cloudflare Workers deployment
 
