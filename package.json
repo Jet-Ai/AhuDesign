@@ -55,3 +55,9 @@
   },
   "type": "module"
 }
+"scripts": {
+  "dev": "vinext dev",
+  "clean": "rm -rf .vinext dist .vite node_modules/.cache",
+  "build": "pnpm run clean && vinext build",
+  "deploy": "pnpm run build && wrangler deploy"
+}
