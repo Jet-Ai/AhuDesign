@@ -1,19 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "ahudesign",
-  "main": "dist/server/index.js",
-  "compatibility_date": "2026-05-15",
+  "main": "./.vinext/server/index.js",
+  "assets": {
+    "directory": "./.vinext/client"
+  },
+  "compatibility_date": "2026-09-08",
   "compatibility_flags": [
     "nodejs_compat"
-  ],
-  "no_bundle": true,
-  "assets": {
-    "directory": "dist/client"
-  },
-  "build": {
-    "command": "pnpm run build"
-  },
-  "observability": {
-    "enabled": true
-  }
+  ]
 }
